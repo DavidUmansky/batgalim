@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+main {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #03a9f4; */
+    mix-blend-mode: overlay;
+    background: #ffffff;
+    /* mix-blend-mode: unset; */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 12px;
+    width: 175px;
+    min-height: 100vh;
+    background: rgb(0 0 0 / 90%);
+    color: white;
+    box-shadow: -2px 0px 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu a {
+    height: 26px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 28px;
+}
+
+.menu a.active i,.menu a:hover i {
+    color: #e9ca19;
+}
+
+i {
+    color: white;
+    font-size: 28px !important;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    margin-left: 15px;
+}
+
+.menu a i:hover {
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
